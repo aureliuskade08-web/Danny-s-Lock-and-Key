@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny's Dacula Lock & Key - Dacula, GA Locksmith - (770) 906-4443</title>
+    <!-- SEO: Exact match to original site's title for 100% seamless transition -->
+    <meta name="description" content="Danny's Dacula Lock & Key - Your trusted 24/7 emergency locksmith in Dacula, GA. Fast residential, commercial & automotive services: lockouts, rekeying, deadbolts, key fobs, master key systems & more. Same-day service. Call (770) 906-4443 now!">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="locksmith dacula ga, dacula locksmith, emergency locksmith dacula, car locksmith dacula, commercial locksmith dacula, residential locksmith dacula, lockout service dacula ga">
+    <!-- Canonical for perfect SEO continuity -->
+    <link rel="canonical" href="https://www.dannysdaculalockandkey.com/">
+    
+    <!-- Open Graph / Social SEO (matches original intent and boosts sharing) -->
+    <meta property="og:title" content="Danny's Dacula Lock & Key - Dacula, GA Locksmith - (770) 906-4443">
+    <meta property="og:description" content="24/7 Emergency Locksmith in Dacula, GA. Fast, reliable service for homes, businesses & vehicles. Call (770) 906-4443.">
+    <meta property="og:url" content="https://www.dannysdaculalockandkey.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Danny's Dacula Lock & Key">
+    <meta property="og:image" content="https://www.dannysdaculalockandkey.com/og-image.jpg"> <!-- Replace with your actual hero image URL later -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#DC2626',
+                        'primary-dark': '#B91C1C',
+                        'primary-light': '#EF4444',
+                        dark: '#0A0A0A',
+                        'dark-light': '#171717',
+                        'dark-lighter': '#262626',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #DC2626;
+            border-radius: 4px;
+        }
+        
+        /* Hero Background */
+        .hero-bg {
+            background-image: 
+                radial-gradient(ellipse at 20% 50%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                linear-gradient(180deg, #0A0A0A 0%, #171717 100%);
+        }
+        
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #FFFFFF 0%, #DC2626 50%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Animated Border */
+        .animated-border {
+            position: relative;
+        }
+        .animated-border::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(90deg, #DC2626, #FFFFFF, #DC2626);
+            border-radius: inherit;
+            z-index: -1;
+            animation: border-rotate 3s linear infinite;
+            background-size: 200% 100%;
+        }
+        @keyframes border-rotate {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        
+        /* Card Hover Effects */
+        .service-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(220, 38, 38, 0.1), transparent);
+            transition: left 0.7s ease;
+        }
+        .service-card:hover::before {
+            left: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-16px) scale(1.02);
+            box-shadow: 0 40px 80px -20px rgba(220, 38, 38, 0.3);
+        }
+        
+        /* CTA Button Animation */
+        .cta-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        .cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(2deg); }
+            75% { transform: translateY(10px) rotate(-2deg); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Pulse Ring */
+        .pulse-ring {
+            position: relative;
+        }
+        .pulse-ring::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid #DC2626;
+            border-radius: inherit;
+            animation: pulse-ring 2s ease-out infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+        
+        /* Stat Counter Animation */
+        .stat-item {
+            transition: all 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Testimonial Card */
+        .testimonial-card {
+            transition: all 0.4s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            background: linear-gradient(135deg, #262626 0%, #171717 100%);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        /* Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Glowing Effect */
+        .glow {
+            box-shadow: 0 0 40px rgba(220, 38, 38, 0.4), 0 0 80px rgba(220, 38, 38, 0.2);
+        }
+        
+        /* Number Background */
+        .number-bg {
+            position: relative;
+        }
+        .number-bg::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 8rem;
+            font-weight: 900;
+            color: rgba(220, 38, 38, 0.05);
+            font-family: 'Playfair Display', serif;
+            z-index: 0;
+        }
+        
+        /* Loading Animation */
+        .loading-bar {
+            height: 3px;
+            background: linear-gradient(90deg, #DC2626, #FFFFFF, #DC2626);
+            background-size: 200% 100%;
+            animation: loading 1.5s ease-in-out infinite;
+        }
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+
+    <!-- Loading Bar -->
+    <div class="fixed top-0 left-0 w-full z-[100] loading-bar"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-dark/90 backdrop-blur-xl border-b border-white/5 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="https://www.dannysdaculalockandkey.com/" class="flex items-center gap-4 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        🔑
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-tight heading-font text-white">Danny's Dacula</h1>
+                        <p class="text-primary text-xs font-semibold tracking-widest uppercase">Lock & Key</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-10">
+                    <a href="#services" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        Services
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#why-us" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        Why Us
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#process" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        Process
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#testimonials" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#faq" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        FAQ
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors relative group">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+
+                <!-- CTA & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="tel:7709064443" 
+                       class="hidden sm:flex cta-button bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-semibold px-6 py-3 rounded-full items-center gap-3 shadow-lg shadow-primary/30">
+                        <i class="fas fa-phone text-sm"></i>
+                        <span class="hidden md:inline">(770) 906-4443</span>
+                        <span class="md:hidden">Call Now</span>
+                    </a>
+                    <button id="mobileMenuBtn" class="lg:hidden w-12 h-12 bg-dark-lighter rounded-xl flex items-center justify-center text-xl hover:bg-primary/20 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-80 h-full bg-dark-light border-l border-white/10 z-[60] p-8">
+        <button id="closeMenu" class="absolute top-6 right-6 w-10 h-10 bg-dark-lighter rounded-xl flex items-center justify-center">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mt-16 space-y-6">
+            <a href="#services" class="block text-lg font-medium hover:text-primary transition">Services</a>
+            <a href="#why-us" class="block text-lg font-medium hover:text-primary transition">Why Us</a>
+            <a href="#process" class="block text-lg font-medium hover:text-primary transition">Process</a>
+            <a href="#testimonials" class="block text-lg font-medium hover:text-primary transition">Reviews</a>
+            <a href="#faq" class="block text-lg font-medium hover:text-primary transition">FAQ</a>
+            <a href="#contact" class="block text-lg font-medium hover:text-primary transition">Contact</a>
+            <a href="tel:7709064443" class="block mt-8 bg-primary text-white text-center py-4 rounded-2xl font-semibold">
+                <i class="fas fa-phone mr-2"></i> (770) 906-4443
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl float-animation"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl float-animation" style="animation-delay: -2s;"></div>
+        
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-8">
+                        <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                        <span class="text-sm font-semibold text-primary">24/7 EMERGENCY SERVICE AVAILABLE</span>
+                    </div>
+                    
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold heading-font leading-[1.1] mb-6">
+                        <span class="text-white">Fast. Reliable.</span><br>
+                        <span class="gradient-text">Trusted Locksmith</span><br>
+                        <span class="text-white">in Dacula</span>
+                    </h1>
+                    
+                    <p class="text-xl text-zinc-400 max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
+                        Professional residential, commercial & automotive locksmith services. Same-day service with transparent pricing — no hidden fees, ever.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                        <a href="tel:7709064443" 
+                           class="cta-button pulse-ring bg-gradient-to-r from-primary to-primary-dark text-white text-lg font-bold px-10 py-5 rounded-2xl flex items-center justify-center gap-3 shadow-2xl shadow-primary/40">
+                            <i class="fas fa-phone"></i>
+                            <span>CALL (770) 906-4443</span>
+                        </a>
+                        <a href="#contact" 
+                           class="group border-2 border-white/20 hover:border-primary/50 hover:bg-primary/5 text-lg font-semibold px-10 py-5 rounded-2xl flex items-center justify-center gap-3 transition-all duration-300">
+                            <span>Get Free Quote</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-bolt text-primary text-xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="font-bold text-white">Under 25 Min</p>
+                                <p class="text-sm text-zinc-500">Response Time</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-primary text-xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="font-bold text-white">Licensed</p>
+                                <p class="text-sm text-zinc-500">& Insured</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-star text-primary text-xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="font-bold text-white">5-Star Rated</p>
+                                <p class="text-sm text-zinc-500">Google Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Hero Image/Card -->
+                <div class="hidden lg:block relative">
+                    <div class="relative">
+                        <!-- Main Card -->
+                        <div class="bg-gradient-to-br from-dark-light to-dark-lighter rounded-3xl p-10 border border-white/10 glow">
+                            <div class="text-6xl mb-6">🔐</div>
+                            <h3 class="text-3xl font-bold heading-font mb-4">Locked Out?</h3>
+                            <p class="text-zinc-400 mb-8">Don't panic. Our expert locksmiths are on standby 24/7 to get you back in safely.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center gap-4 bg-dark/50 rounded-xl p-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-home text-primary"></i>
+                                    </div>
+                                    <span class="font-medium">Home Lockouts</span>
+                                    <span class="ml-auto text-primary font-bold">Starting $49</span>
+                                </div>
+                                <div class="flex items-center gap-4 bg-dark/50 rounded-xl p-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-car text-primary"></i>
+                                    </div>
+                                    <span class="font-medium">Car Lockouts</span>
+                                    <span class="ml-auto text-primary font-bold">Starting $59</span>
+                                </div>
+                                <div class="flex items-center gap-4 bg-dark/50 rounded-xl p-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-building text-primary"></i>
+                                    </div>
+                                    <span class="font-medium">Business Lockouts</span>
+                                    <span class="ml-auto text-primary font-bold">Starting $69</span>
+                                </div>
+                            </div>
+                            
+                            <a href="tel:7709064443" class="block w-full bg-white text-dark font-bold py-4 rounded-xl text-center hover:bg-zinc-100 transition">
+                                <i class="fas fa-phone mr-2"></i> Emergency Call Now
+                            </a>
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -top-6 -right-6 bg-primary text-white px-6 py-3 rounded-2xl font-bold shadow-xl float-animation">
+                            <i class="fas fa-clock mr-2"></i> 24/7 Available
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500">
+            <span class="text-sm">Scroll to explore</span>
+            <div class="w-6 h-10 border-2 border-zinc-700 rounded-full flex justify-center pt-2">
+                <div class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-dark-light border-y border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="stat-item text-center">
+                    <div class="text-5xl font-bold text-white heading-font mb-2">15+</div>
+                    <p class="text-zinc-400">Years Experience</p>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-5xl font-bold text-white heading-font mb-2">10K+</div>
+                    <p class="text-zinc-400">Jobs Completed</p>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-5xl font-bold text-white heading-font mb-2">25</div>
+                    <p class="text-zinc-400">Min Avg Response</p>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-5xl font-bold text-white heading-font mb-2">4.9</div>
+                    <p class="text-zinc-400">Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-dark relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                    <span class="text-sm font-semibold text-primary">OUR SERVICES</span>
+                </div>
+                <h2 class="text-5xl lg:text-6xl font-bold heading-font mb-6">
+                    Complete <span class="text-primary">Locksmith</span> Solutions
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Professional services tailored for your home, business, and vehicle needs
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Residential -->
+                <div class="service-card bg-gradient-to-br from-dark-light to-dark-lighter rounded-3xl p-10 border border-white/5">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center text-5xl mb-8">
+                        🏠
+                    </div>
+                    <h3 class="text-3xl font-bold heading-font mb-4">Residential</h3>
+                    <p class="text-zinc-400 mb-8">Keep your home and family safe with our comprehensive residential locksmith services.</p>
+                    
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Emergency Lockouts
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Lock Rekeying Services
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Deadbolt Installation
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            High-Security Locks
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Smart Lock Systems
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Garage Door Locks
+                        </li>
+                    </ul>
+                    
+                    <a href="tel:7709064443" class="group flex items-center justify-between bg-dark hover:bg-primary text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300">
+                        <span>Get Home Help</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Commercial (Featured) -->
+                <div class="service-card bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl p-10 border border-primary/30 relative lg:-mt-8 lg:mb-8">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-primary-dark text-white text-xs font-bold px-6 py-2 rounded-full shadow-lg">
+                        <i class="fas fa-star mr-1"></i> MOST REQUESTED
+                    </div>
+                    
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl flex items-center justify-center text-5xl mb-8 mt-4">
+                        🏢
+                    </div>
+                    <h3 class="text-3xl font-bold heading-font mb-4">Commercial</h3>
+                    <p class="text-zinc-400 mb-8">Secure your business with enterprise-grade commercial locksmith solutions.</p>
+                    
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Master Key Systems
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Access Control Systems
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Business Lockouts
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Panic Bar Installation
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Safe & Vault Service
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            File Cabinet Locks
+                        </li>
+                    </ul>
+                    
+                    <a href="tel:7709064443" class="group flex items-center justify-between bg-primary hover:bg-primary-dark text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300">
+                        <span>Secure Your Business</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Automotive -->
+                <div class="service-card bg-gradient-to-br from-dark-light to-dark-lighter rounded-3xl p-10 border border-white/5">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center text-5xl mb-8">
+                        🚗
+                    </div>
+                    <h3 class="text-3xl font-bold heading-font mb-4">Automotive</h3>
+                    <p class="text-zinc-400 mb-8">Get back on the road fast with our mobile automotive locksmith services.</p>
+                    
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Car & Truck Lockouts
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Lost Key Replacement
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Key Fob Programming
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Transponder Keys
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Ignition Repair
+                        </li>
+                        <li class="flex items-center gap-4 text-zinc-300">
+                            <div class="w-6 h-6 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-check text-primary text-xs"></i>
+                            </div>
+                            Broken Key Extraction
+                        </li>
+                    </ul>
+                    
+                    <a href="tel:7709064443" class="group flex items-center justify-between bg-dark hover:bg-primary text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300">
+                        <span>Car Lockout Help</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="bg-gradient-to-r from-primary via-primary-dark to-primary py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="text-center lg:text-left">
+                    <h3 class="text-3xl lg:text-4xl font-bold heading-font text-white mb-3">
+                        <i class="fas fa-exclamation-triangle mr-3"></i>
+                        Locked Out Right Now?
+                    </h3>
+                    <p class="text-white/80 text-lg">We're available 24/7 — even holidays. Help is just a call away.</p>
+                </div>
+                <a href="tel:7709064443" class="group bg-white text-primary hover:bg-zinc-100 text-xl font-bold px-10 py-5 rounded-2xl flex items-center gap-4 shadow-2xl transition">
+                    <i class="fas fa-phone text-2xl"></i>
+                    <span>(770) 906-4443</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-32 bg-dark-light relative overflow-hidden">
+        <div class="absolute left-0 bottom-0 w-1/2 h-1/2 bg-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                        <span class="text-sm font-semibold text-primary">WHY CHOOSE US</span>
+                    </div>
+                    <h2 class="text-5xl lg:text-6xl font-bold heading-font leading-tight mb-8">
+                        Why Dacula Trusts <span class="text-primary">Danny's</span> Lock & Key
+                    </h2>
+                    <p class="text-xl text-zinc-400 mb-12">
+                        For over 15 years, we've been the go-to locksmith for families and businesses throughout Gwinnett County. Here's what sets us apart.
+                    </p>
+                    
+                    <div class="space-y-10">
+                        <div class="flex gap-6 number-bg" data-number="01">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bolt text-primary text-2xl"></i>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-bold mb-3">Lightning Fast Response</h4>
+                                <p class="text-zinc-400 leading-relaxed">Average response time under 25 minutes. When you're locked out, every minute counts — we get it.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 number-bg" data-number="02">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-dollar-sign text-primary text-2xl"></i>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-bold mb-3">Transparent Pricing</h4>
+                                <p class="text-zinc-400 leading-relaxed">Upfront quotes before we start. No surprise charges, no hidden fees. What we quote is what you pay.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 number-bg" data-number="03">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-primary text-2xl"></i>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-bold mb-3">Locally Owned & Operated</h4>
+                                <p class="text-zinc-400 leading-relaxed">We live and work in Dacula. Your security is our reputation — and we take that seriously.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 number-bg" data-number="04">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-certificate text-primary text-2xl"></i>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-bold mb-3">Licensed & Insured</h4>
+                                <p class="text-zinc-400 leading-relaxed">Fully licensed, bonded, and insured. Your property is protected with every service call.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Quote Card -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-dark-lighter to-dark rounded-3xl p-12 border border-white/10">
+                        <div class="text-8xl text-primary/20 heading-font absolute top-6 left-8">"</div>
+                        <blockquote class="text-3xl font-medium heading-font leading-relaxed mb-8 relative z-10">
+                            We evaluate our service daily to deliver better results at better prices.
+                        </blockquote>
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-2xl">🔑</div>
+                            <div>
+                                <p class="font-bold text-lg">Danny's Team</p>
+                                <p class="text-zinc-500">Danny's Dacula Lock & Key</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="bg-dark rounded-2xl p-6 text-center border border-white/5">
+                            <i class="fas fa-shield-alt text-primary text-3xl mb-3"></i>
+                            <p class="text-sm font-medium">Licensed</p>
+                        </div>
+                        <div class="bg-dark rounded-2xl p-6 text-center border border-white/5">
+                            <i class="fas fa-file-contract text-primary text-3xl mb-3"></i>
+                            <p class="text-sm font-medium">Bonded</p>
+                        </div>
+                        <div class="bg-dark rounded-2xl p-6 text-center border border-white/5">
+                            <i class="fas fa-umbrella text-primary text-3xl mb-3"></i>
+                            <p class="text-sm font-medium">Insured</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-32 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                    <span class="text-sm font-semibold text-primary">HOW IT WORKS</span>
+                </div>
+                <h2 class="text-5xl lg:text-6xl font-bold heading-font mb-6">
+                    Simple <span class="text-primary">3-Step</span> Process
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Getting help is easy. Here's what happens when you call.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connection Line -->
+                <div class="hidden md:block absolute top-24 left-1/4 right-1/4 h-1 bg-gradient-to-r from-primary via-white to-primary rounded-full"></div>
+                
+                <!-- Step 1 -->
+                <div class="relative text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-8 relative z-10">1</div>
+                    <div class="bg-dark-light rounded-3xl p-10 border border-white/5 h-full">
+                        <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">📞</div>
+                        <h3 class="text-2xl font-bold heading-font mb-4">Call Us Anytime</h3>
+                        <p class="text-zinc-400">Give us a call at (770) 906-4443. Tell us your situation and location. We answer 24/7.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-8 relative z-10">2</div>
+                    <div class="bg-dark-light rounded-3xl p-10 border border-white/5 h-full">
+                        <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">🚐</div>
+                        <h3 class="text-2xl font-bold heading-font mb-4">We Arrive Fast</h3>
+                        <p class="text-zinc-400">Our skilled technician arrives at your location within 25 minutes on average, fully equipped.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-8 relative z-10">3</div>
+                    <div class="bg-dark-light rounded-3xl p-10 border border-white/5 h-full">
+                        <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">✅</div>
+                        <h3 class="text-2xl font-bold heading-font mb-4">Problem Solved</h3>
+                        <p class="text-zinc-400">We get you back in safely and securely. Pay only what was quoted — no surprises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-32 bg-dark-light relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                    <span class="text-sm font-semibold text-primary">TESTIMONIALS</span>
+                </div>
+                <h2 class="text-5xl lg:text-6xl font-bold heading-font mb-6">
+                    What Our <span class="text-primary">Customers</span> Say
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Real reviews from real customers in Dacula and surrounding areas
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"He showed up promptly, educated us on all the options without any upsell, did a superb job, all at a very fair price. Highly recommend!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">JT</div>
+                        <div>
+                            <p class="font-bold">John Taylor</p>
+                            <p class="text-sm text-zinc-500">Dacula Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"Got us into the apartment in record time. Friendly, knowledgeable and went above and beyond to help us out. Thank you Danny!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">RB</div>
+                        <div>
+                            <p class="font-bold">Rina Brick</p>
+                            <p class="text-sm text-zinc-500">Apartment Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"The best locksmith I have ever dealt with. Fast, friendly and arrived in about 20 minutes. Will definitely use again!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">DR</div>
+                        <div>
+                            <p class="font-bold">Dana Rosen</p>
+                            <p class="text-sm text-zinc-500">Car Lockout Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"Called at 11pm on a Saturday when I was locked out. Danny arrived in 15 minutes and got me in without any damage. Amazing service!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">MK</div>
+                        <div>
+                            <p class="font-bold">Mike Kennedy</p>
+                            <p class="text-sm text-zinc-500">Emergency Lockout</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"Rekeyed all the locks in my new home. Professional, clean work, and the price was exactly what he quoted. No surprises!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">SL</div>
+                        <div>
+                            <p class="font-bold">Sarah Lewis</p>
+                            <p class="text-sm text-zinc-500">New Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card bg-dark rounded-3xl p-8 border border-white/5">
+                    <div class="flex gap-1 text-primary text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed mb-8">"Used Danny for our business. Installed a master key system for all our doors. Great work, fair price, highly professional."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">RP</div>
+                        <div>
+                            <p class="font-bold">Robert Patterson</p>
+                            <p class="text-sm text-zinc-500">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Rating -->
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center gap-4 bg-dark rounded-full px-8 py-4 border border-white/10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-8 brightness-0 invert">
+                    <div class="flex gap-1 text-primary text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-lg font-bold">4.9/5</span>
+                    <span class="text-zinc-500">from 150+ reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Map Section -->
+    <section class="py-32 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Map Placeholder -->
+                <div class="relative">
+                    <div class="bg-dark-light rounded-3xl overflow-hidden border border-white/10 aspect-square">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106144.94879559787!2d-83.98!3d33.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59d76dfb9b7c3%3A0x7eb58d57f5a81f4f!2sDacula%2C%20GA!5e0!3m2!1sen!2sus!4v1706000000000"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: grayscale(1) invert(1);" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-8 -right-8 bg-primary text-white rounded-2xl p-6 shadow-2xl">
+                        <p class="text-3xl font-bold heading-font">25+ Miles</p>
+                        <p class="text-white/80">Service Radius</p>
+                    </div>
+                </div>
+                
+                <!-- Service Area Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                        <span class="text-sm font-semibold text-primary">SERVICE AREA</span>
+                    </div>
+                    <h2 class="text-5xl font-bold heading-font mb-6">
+                        Serving <span class="text-primary">Dacula</span> & Surrounding Areas
+                    </h2>
+                    <p class="text-xl text-zinc-400 mb-10">
+                        We proudly serve Dacula and communities throughout Gwinnett County and beyond.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-10">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Dacula</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Buford</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Lawrenceville</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Suwanee</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Duluth</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Winder</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Auburn</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Hamilton Mill</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-zinc-500 mb-8">Don't see your area? Give us a call — we probably cover it!</p>
+                    
+                    <a href="tel:7709064443" class="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition">
+                        <i class="fas fa-phone"></i>
+                        <span>Call to Confirm Service Area</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-32 bg-dark-light">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                    <span class="text-sm font-semibold text-primary">FAQ</span>
+                </div>
+                <h2 class="text-5xl lg:text-6xl font-bold heading-font mb-6">
+                    Frequently Asked <span class="text-primary">Questions</span>
+                </h2>
+                <p class="text-xl text-zinc-400">
+                    Quick answers to common questions about our services
+                </p>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4">
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">How quickly can you arrive?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">Our average response time is under 25 minutes within our primary service area of Dacula and surrounding Gwinnett County communities. For emergencies, we prioritize getting to you as fast as safely possible.</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">Do you offer 24/7 emergency service?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">Yes! We're available 24 hours a day, 7 days a week, including holidays. Lockouts don't follow a schedule, and neither do we. Call us anytime at (770) 906-4443.</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">What forms of payment do you accept?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">We accept all major credit cards, debit cards, cash, and mobile payments including Apple Pay and Google Pay. Payment is collected after the job is completed to your satisfaction.</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">Are your locksmiths licensed and insured?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">Absolutely. All our technicians are fully licensed, bonded, and insured. We take your property's security seriously and maintain all proper credentials and insurance coverage.</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">Do you provide upfront pricing?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">Yes! We always provide a clear, upfront quote before starting any work. There are no hidden fees or surprise charges. The price we quote is the price you pay — guaranteed.</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl border border-white/5 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                        <span class="text-lg font-semibold">Can you make keys for any car?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-zinc-400">We can make keys, program key fobs, and handle transponder keys for most makes and models. This includes domestic and foreign vehicles. Call us with your specific vehicle info for confirmation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-dark relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1/2 h-full bg-primary/5 rounded-r-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20">
+                <!-- Contact Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-5 py-2 mb-6">
+                        <span class="text-sm font-semibold text-primary">GET IN TOUCH</span>
+                    </div>
+                    <h2 class="text-5xl lg:text-6xl font-bold heading-font mb-6">
+                        Ready to Solve Your <span class="text-primary">Lock</span> Problem?
+                    </h2>
+                    <p class="text-xl text-zinc-400 mb-12">
+                        Call us anytime — we're here to help 7 days a week, 365 days a year.
+                    </p>
+                    
+                    <!-- Contact Methods -->
+                    <div class="space-y-8">
+                        <a href="tel:7709064443" class="flex items-center gap-6 group">
+                            <div class="w-16 h-16 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+                                <i class="fas fa-phone text-primary group-hover:text-white text-2xl transition"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-zinc-500 mb-1">Call or Text</p>
+                                <p class="text-3xl font-bold group-hover:text-primary transition">(770) 906-4443</p>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:Dannysdaculalockandkey@gmail.com" class="flex items-center gap-6 group">
+                            <div class="w-16 h-16 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+                                <i class="fas fa-envelope text-primary group-hover:text-white text-2xl transition"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-zinc-500 mb-1">Email Us</p>
+                                <p class="text-lg font-semibold group-hover:text-primary transition break-all">Dannysdaculalockandkey@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-zinc-500 mb-1">Service Area</p>
+                                <p class="text-lg font-semibold">Dacula, GA & Surrounding Areas</p>
+                                <p class="text-zinc-500">2622 Freemans Walk Path, Dacula, GA 30019</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-clock text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-zinc-500 mb-1">Business Hours</p>
+                                <p class="text-lg font-semibold">Mon – Sun: 7:00 AM – 11:45 PM</p>
+                                <p class="text-primary text-sm font-medium">After-hours emergency service available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div class="bg-dark-light rounded-3xl p-10 border border-white/10">
+                        <h3 class="text-2xl font-bold heading-font mb-2">Request a Free Quote</h3>
+                        <p class="text-zinc-500 mb-8">Fill out the form and we'll get back to you ASAP.</p>
+                        
+                        <form class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">First Name</label>
+                                    <input type="text" class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Last Name</label>
+                                    <input type="text" class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition" placeholder="Doe">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Phone Number</label>
+                                <input type="tel" class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition" placeholder="(770) 000-0000">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email Address</label>
+                                <input type="email" class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition" placeholder="john@example.com">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Service Needed</label>
+                                <select class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition">
+                                    <option value="">Select a service...</option>
+                                    <option value="residential">Residential Locksmith</option>
+                                    <option value="commercial">Commercial Locksmith</option>
+                                    <option value="automotive">Automotive Locksmith</option>
+                                    <option value="emergency">Emergency Lockout</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Describe Your Issue</label>
+                                <textarea rows="4" class="w-full bg-dark border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-primary transition resize-none" placeholder="Tell us about your lock situation..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-bold py-5 rounded-xl text-lg transition-all duration-300 flex items-center justify-center gap-3">
+                                <span>SEND MESSAGE</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <p class="text-center text-sm text-zinc-500">
+                                <i class="fas fa-lock mr-1"></i>
+                                Your information is secure and will never be shared.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-gradient-to-br from-primary via-primary-dark to-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
+            <div class="text-7xl mb-8">🔐</div>
+            <h2 class="text-4xl lg:text-6xl font-bold heading-font text-white mb-6">
+                Don't Stay Locked Out
+            </h2>
+            <p class="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+                Whether it's your home, car, or business — we've got the expertise to get you back in safely and quickly.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="tel:7709064443" class="group bg-white text-primary hover:bg-zinc-100 text-xl font-bold px-12 py-6 rounded-2xl flex items-center justify-center gap-4 shadow-2xl transition">
+                    <i class="fas fa-phone text-2xl"></i>
+                    <span>(770) 906-4443</span>
+                </a>
+                <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-primary text-xl font-bold px-12 py-6 rounded-2xl flex items-center justify-center gap-4 transition">
+                    <i class="fas fa-envelope"></i>
+                    <span>Get a Quote</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Logo & About -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center text-3xl shadow-lg">
+                            🔑
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold heading-font">Danny's Dacula</h3>
+                            <p class="text-primary text-sm font-semibold tracking-wider">LOCK & KEY</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400 mb-6 max-w-md">
+                        Proudly serving Dacula, Georgia and surrounding communities with fast, reliable, and honest locksmith services since 2008.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 bg-dark-lighter hover:bg-primary rounded-xl flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-dark-lighter hover:bg-primary rounded-xl flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-dark-lighter hover:bg-primary rounded-xl flex items-center justify-center transition">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-dark-lighter hover:bg-primary rounded-xl flex items-center justify-center transition">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="text-zinc-400 hover:text-primary transition">Services</a></li>
+                        <li><a href="#why-us" class="text-zinc-400 hover:text-primary transition">Why Choose Us</a></li>
+                        <li><a href="#process" class="text-zinc-400 hover:text-primary transition">How It Works</a></li>
+                        <li><a href="#testimonials" class="text-zinc-400 hover:text-primary transition">Reviews</a></li>
+                        <li><a href="#faq" class="text-zinc-400 hover:text-primary transition">FAQ</a></li>
+                        <li><a href="#contact" class="text-zinc-400 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Residential Locksmith</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Commercial Locksmith</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Automotive Locksmith</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Emergency Lockout</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Lock Rekeying</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-primary transition">Key Duplication</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-zinc-500 text-sm">
+                    © 2026 Danny's Dacula Lock & Key. All Rights Reserved.
+                </p>
+                <div class="flex gap-6 text-sm text-zinc-500">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LocalBusiness Schema for enhanced local SEO (seamless boost without changing visible content) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Danny's Dacula Lock & Key",
+      "url": "https://www.dannysdaculalockandkey.com/",
+      "telephone": "+17709064443",
+      "email": "Dannysdaculalockandkey@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2622 Freemans Walk Path",
+        "addressLocality": "Dacula",
+        "addressRegion": "GA",
+        "postalCode": "30019",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.9887,
+        "longitude": -83.8977
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "07:00",
+        "closes": "23:45"
+      },
+      "areaServed": ["Dacula", "Buford", "Lawrenceville", "Suwanee", "Duluth", "Winder", "Auburn", "Hamilton Mill"],
+      "description": "24/7 Emergency Locksmith in Dacula, GA providing residential, commercial, and automotive locksmith services.",
+      "serviceType": ["Locksmith", "Lockout Service", "Key Replacement", "Rekeying"]
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    if (c !== content) {
+                        c.classList.add('hidden');
+                        c.previousElementSibling.querySelector('i').classList.remove('rotate-45');
+                    }
+                });
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-45');
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-dark/95');
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Hide loading bar after page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.loading-bar').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>
